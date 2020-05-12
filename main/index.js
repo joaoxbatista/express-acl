@@ -24,7 +24,7 @@ router.use(async (req, res, next) => {
 	next();
 });
 
-// Middleware para verificar se a requeste possui token
+// Middleware para verificar se a request possui token
 router.use( async (req, res, next) => {
 	const token = req.headers['X-Access-Token'];
 	if(!token) {
